@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add address to your account</title>
+	<style>
+		* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family:sans-serif;
+	scroll-behavior: smooth;
+	background: linear-gradient(gray,gray);
+}
+#address{
+	margin: 4% auto;
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(gray,gray);
+    background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+#address::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: black;
+	opacity: 0.7;
+	z-index: -1;
+}    
+#address h1{
+	font-size: 2.5rem;
+	display: flex;
+	position: relative;
+	align-items: center;
+	margin-left: 100px;
+	color: ghostwhite;
+	display: flex;
+	justify-content: center;
+
+}
+#address h4{
+	font-size: 1.5rem;
+	color: white;
+	margin-top: 10px;
+	}
+#address h1:hover{
+	font-size: 3rem;
+	color: #2196f3;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+#address .details{
+	display: flex;
+	position: relative;
+	align-content: center;
+	border: 2rem solid transparent;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+
+        
+}
+#address .details .input-group{
+	position: relative;
+}
+#address .details input{
+	border: solid 1.5px #9e9e9e;
+	border-radius: 1rem;
+	background: none;
+	margin-top: 20px;
+	padding: 2.5rem;
+	font-size:2rem;
+	color: #f5f5f5;
+	transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#address .details label{
+	position: absolute;
+	font-size: 13px;
+	left: 16px;
+	margin-top: 20px;
+	color: #e8e8e8;
+	pointer-events: none;
+	transform: translateY(1.5rem);
+	transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#address .details input:focus{
+	outline: none;
+	border: 1.5px solid #1a73e8;
+}
+#address .details input:focus ~ label{
+	transform: translateY(-50%) scale(0.8);
+	background-color: #020e26;
+	padding: 0 0.2em;
+	color: #2196f3;
+	font-size: 15px;
+}
+#address .details .ctr {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid #2196f3;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+	text-align: center;
+}
+#address .details .ctr:hover {
+	color: ghostwhite;
+	background-color: #2196f3;
+	text-decoration: none;
+}
+
+</style>
+
+</head>
+<body>
+	<section id="address">
+          <h1>Products can be added quickly</h1>
+               <div class="details">
+                    <form method="post" enctype="multipart/form-data" action="product.php" name="">
+                         <div class="input-group">
+                         <input type="file" name="uploadfile" >
+                         <label>upload crop photo*</label>
+                    </div>
+                     <h1>Product Details</h1>
+                    <div class="input-group">
+                         <input type="text"  name="ProductName" >
+                         <label>Product name(Required)*</label>
+                </div>
+                <div class="input-group">
+                         <input type="text" name="Quantity">
+                         <label>Quantity(Required)*</label>
+
+                </div>
+                <div class="input-group" >
+                         <input type="text" name="price" style="height:70px; width:150px;">
+                         <label>Price(Required)*</label>
+                </div>
+               <div class="input-group" style="margin-top: -90px; margin-left: 160px;">
+                         <input type="text" name="discount"; style="height:70px; width:150px;">
+                         <label>Discount(Required)*</label>
+                </div>
+					
+                <div class="input-group">
+					<input type="text" >
+					<label>House no.,building name(Required)</label>
+                </div>
+               
+             <div><input type="button" class="ctr" value="continue"></div>
+             </form>
+             </div>
+         </section>
+
+</body>
+</html>
