@@ -1,0 +1,85 @@
+<?php
+$servername="localhost";
+$username="root";
+$dbname="project_db";
+$pass='';
+$con=new mysqli($servername,$username,$dbname,$pass);
+if($con->connect_error)
+{
+die('Error');
+}
+$sql="SELECT * FROM farmer_details";
+$result=$con->query($sql);
+$con->close();
+?>
+<html>
+<head>
+<style>
+body
+{
+background-color:  #363945;
+font-family:Arial;
+}
+table
+{
+width: 700px;
+border: 1px solid  #A0DAA9;
+margin: 0 auto;
+}
+tr
+{
+background: pink;
+}
+td{
+font-weight: lighter;
+text-align: center;
+font-size: 15px;
+}
+h1
+{
+font-size: 3rem;
+text-align: center;
+color:  #A0DAA9;
+}
+th
+{
+font-size: 18px;
+font-weight: 200px;
+background-color: pink;
+border-color: red;
+}
+</style>
+</head>
+<body>
+<h1>FARMER DETAILS</h1>
+<table  cellpadding=4>
+<tr>
+<th>Name</th>
+<th>Phone Number</th>
+<th> acres</th>
+<th>pincode</th>
+<th>State</th>
+<th>City</th>
+<th>house_building</th>
+<th>area</th>
+</tr>
+<?php
+while($rows==$result->fetch_assoc())
+{
+?>
+<tr>
+<td><?php echo $rows['Name'];?></td>
+<td><?php echo $rows['Phone Number'];?></td>
+<td><?php echo $rows['acres'];?></td>
+<td><?php echo $rows['Pincode'];?></td>
+<td><?php echo $rows['State'];?></td>
+<td><?php echo $rows['City'];?></td>
+<td><?php echo $rows['house_building'];?></td>
+<td><?php echo $rows['area'];?></td>
+</tr>
+<?php
+}
+?>
+</table>
+</body>
+</html>
