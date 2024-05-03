@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>farmer login</title>
+
+<link rel="stylesheet" href="stl.css">
+<script src="jquery-3.6.1.min.js"></script>
+<script src="jquery.novacancy.js"></script>
+<script>
+   $(document).ready(function() {
+			$('#cust').novacancy({
+				'reblinkProbability': 0.1,
+				'blinkMin': 0.2,
+				'blinkMax': 0.6,
+				'loopMin': 8,
+				'loopMax': 10,
+				'color': '#ffffff',
+				'glow': ['0 0 80px #ffffff', '0 0 30px #008000', '0 0 6px #0000ff']
+			}); 
+
+			$('#log').novacancy({
+				'blink': 1,
+				'off': 1,
+				'color': 'Red',
+				'glow': ['0 0 80px Red', '0 0 30px FireBrick', '0 0 6px DarkRed']
+			});
+		});
+</script>
+
+</head>
+<body>
+	<section id="start">
+<div class="page">
+	<div class="custo-bottom">
+	<h1 id="cust">Farmer <span>Regis</span>tration /</h1><p id="log">Login</p>
+</div>
+<div class="form-box" style="overflow:scroll">
+<div class="button-box">
+<div id="btn">
+</div>
+<button class="toggle" onclick="login()">login</button>
+<button class="toggle" onclick="register()">register</button>
+</div>
+<form class="input-group" id="login"  method="post" action="farmlog.php">
+<input type="text" class="input-field" placeholder="Phone number" name="phone">
+<input type="password" class="input-field" placeholder="Password" name="pass">
+<input type="checkbox" class="check-box"><span>Remember password</span>
+<button type="submit" class="submit-btn" name="login">login</button>
+</form>
+
+<form class="input-group" id="register" action="farmregis.php" method="post">
+<input type="text" class="input-field" placeholder="First name" name="firstname" value="" required>
+<input type="text" class="input-field" placeholder="Last name" name="lastname" value="" required>
+<input type="text" class="input-field" placeholder="Phone number" name="phone" value="" required>
+<input type="password" class="input-field" placeholder="Password" name="pwd" required>
+<input type="password" class="input-field" placeholder="Confirm password" name="cnf_pwd" required>
+<br>
+<label >Farmer</label>
+<input type="radio" class="input-field" placeholder="farmer" name="radio" value="farmer" required>
+<label>Distributor</label>
+<input type="radio" class="input-field" name="radio" value="distributer" required>
+
+<input type="checkbox" class="check-box"><span>I agree to Terms and Conditions</span>
+<button type="submit" class="submit-btn" name="submit">register</button>
+</form>
+</div>
+<script>
+var x=document.getElementById("login");
+var y=document.getElementById("register");
+var z=document.getElementById("btn");
+function register()
+{
+x.style.left="-400px";
+y.style.left="50px";
+z.style.left="110px";
+}
+function login()
+{
+x.style.left="50px";
+y.style.left="450px";
+z.style.left="0";
+}
+</script>
+</section>
+</body>
+</html>

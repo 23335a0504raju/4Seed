@@ -1,0 +1,106 @@
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family:sans-serif;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0px;
+    padding-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+p {
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+.section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+.section-title span {
+    color: #8d021f;
+    
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+    text-align: center;
+}
+.cta:hover {
+    color: ghostwhite;
+    background-color: #363636;
+    text-decoration: none;
+}
+.brand h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 50px;
+    font-family:Gill Sans ;
+}
+.brand h1 span {
+    color: #01796f;
+}
+
+#select-pay {
+    background-image: url("images/veg.jpeg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#select-pay::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+}
+#select-pay hr{
+    color: blueviolet;
+}
+#select-pay h1{
+color: skyblue;
+font-size: 2.5rem;
+}

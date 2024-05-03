@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>4SEED.COM</title>
+<link rel="stylesheet" href="style.css">
+ <script src="jquery-3.6.1.min.js"></script>
+
+  
+ 
+
+</script>
+
+</head>
+<body>
+  
+  <!-- Header -->
+
+ 
+  <!-- Header -->
+  <section id="header">
+    <div class="header container" style="padding: 0px;background-Color :transparent;">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#start" style="text-decoration: none;"><img src="images/logo.png" style="height:150px; width:150px;" ><!--
+            <h1><span>4</span> Seed <span>.</span>Com</h1>-->
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="profile.html" data-after="start">Account</a></li>
+            <li><a href="#category" data-after="category">category</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+</div>
+    </div>
+  </section>
+  <!-- END OF HEADER -->
+
+ <!-- HEADER -->
+
+  <section id="start">
+  	<div class="home container">
+  		<div>
+  			
+                   <h4 data-text="Fruits And Vegetables "> Fruits And Vegetables </h4>
+
+
+  			<br><h2>direct from farmers</h2>
+            <a href="#category" type="button" class="cta">start</a>
+  		</div>
+  	</div>
+  </section>
+
+  <!--  BANNER -->
+
+  <section class="banner-container">
+
+    <div class="banner">
+        <img src="images/ban.jpeg" alt="">
+        <div class="content">
+            <h3>VEGETABLES</h3>
+            <p>ORGANIC</p>
+            <a href="#" class="cta">VISIT</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="images/ban1.jpeg" alt="">
+        <div class="content">
+            <h3>FRUITS</h3>
+            <p>ORGANIC</p>
+            <a href="#" class="cta">VISIT</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- END OF BANNER -->
+
+<!-- category section starts  -->
+
+<section class="category" id="category">
+
+    <h1>shop <span> by </span>category</h1><br>
+
+   <form action="" class="search-box-container">
+            <div class="wrapper">
+              <div class="search-input">
+                <input type="search" placeholder="Type to search.." value="" id="search" onchange="openpage()">
+                <div class="autocom-box">
+                  <!-- here list are inserted from javascript -->
+                </div>
+                <div class="icon"><div class="glyphicon glyphicon-search"></div></div>
+              </div>
+            </div>
+        </form>
+
+      <div id="" style= " cursor: pointer;margin-top:-18rem ; margin-left: 55rem; font-size: 20px;">
+
+                <span class="glyphicon glyphicon-shopping-cart my-cart-icon">
+                    <span class="badge badge-notify my-cart-badge"></span>
+                </span>
+            
+        </div>
+
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Vegetables</h3>
+            <p>available at low price</p>
+            <img src="images/cate.jpeg" alt="">
+            <a href="vegi.php" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <h3>Fruits</h3>
+            <p>available at low price</p>
+            <img src="images/cate5.jpeg" alt="">
+            <a href="fruit.html" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <h3 style="font-size: 2.4rem;">Hybrid Fruits and Vegies</h3>
+            <p>directly from farmers</p>
+            <img src="images/cate2.jpeg" alt="">
+            <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <h3 style="font-size: 2.6rem;">Nuts and Dry fruits</h3>
+            <p>directly from farmers</p>
+            <img src="images/cate4.jpeg" alt="">
+            <a href="#" class="btn btn-info">shop now</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- END OF CATEGORY SECTION  -->
+
+<!-- PRODUCT SECTION -->
+
+<!--<section class="product" id="product">
+
+
+
+
+
+     <link rel="stylesheet" href="bootstrap-3.4.1-dist\css\bootstrap.min.css">
+
+    <script src="jquery-2.2.4.min.js"> </script>
+<script src="cart.js"></script>
+    <script src="jquery.mycart.js"> </script>
+<script src="bootstrap-3.4.1-dist\js\bootstrap.min.js"></script>
+    
+
+
+
+
+
+
+    <h1>Latest <span>Products</span>  </h1><br>
+
+
+    
+    <div class="box-container">
+
+        <div class="box">
+            <span class="discount">0%</span>
+            
+            <img src="images/product1.jpeg" alt="">
+            <h3>tomata</h3>
+            
+            <div class="price"> 0rs <span> 0rs </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button onclick="alert
+            ('added');" class="btn btn-danger my-cart-btn" data-id="1" data-name="tomata" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product1.jpeg">
+        add to cart
+      </button>
+      <a href="" class="btn btn-info">details</a>
+  
+        </div>
+
+        <div class="box">
+            <span class="discount">0%</span>
+            
+            <img src="images/product2.jpeg" alt="">
+            <h3>brinjal</h3>
+            
+            <div class="price"> 0/- <span> 0/- </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+             <button class="btn btn-danger my-cart-btn" data-id="2" data-name="brinjal" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product2.jpeg">
+        add to cart
+      </button>
+      <a href="" class="btn btn-info">details</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">0%</span>
+            
+            <img src="images/product3.jpeg" alt="">
+            <h3>carrot</h3>
+            
+            <div class="price"> 0/- <span> 0/- </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn btn-danger my-cart-btn" data-id="3" data-name="carrot" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product3.jpeg">
+        add to cart
+      </button>
+      <a href="" class="btn btn-info">details</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">0%</span>
+           
+            <img src="images/product4.jpeg" alt="">
+            <h3>potato</h3>
+            
+            <div class="price"> 0/- <span> 0/- </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn btn-danger my-cart-btn" data-id="4" data-name="potato" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product4.jpeg">
+        add to cart
+      </button>
+      <a href="" class="btn btn-info">details</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">0%</span>
+          
+            <img src="images/product5.jpeg" alt="">
+            <h3>apple</h3>
+            
+            <div class="price"> 0/- <span> 0/- </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn btn-danger my-cart-btn" data-id="5" data-name="apple" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product5.jpeg">
+        add to cart
+      </button>
+      <a href="" class="btn btn-info">details</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">0%</span>
+            
+            <img src="images/product6.jpeg" alt="">
+            <h3>banana</h3>
+            
+            <div class="price"> 0/- <span> 0/- </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn btn-danger my-cart-btn" data-id="6" data-name="banana" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product6.jpeg">
+        add to cart
+      </button>
+      <a href="" class="btn btn-info">details</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">0%</span>
+           
+            <img src="images/product7.jpeg" alt="">
+            <h3>pine apple</h3>
+           
+            <div class="price"> 0/- <span> 0/- </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+             <button class="btn btn-danger my-cart-btn" data-id="7" data-name="pine apple" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product7.jpeg">
+        add to cart
+      </button>
+      <a href="" class="btn btn-info">details</a>
+        </div>
+
+         <div class="box">
+            <span class="discount">0%</span>
+          
+            <img src="images/product8.jpeg" alt="">
+            <h3>kiwi</h3>
+          
+            <div class="price"> 0/- <span> 0/- </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+           <button class="btn btn-danger my-cart-btn" data-id="8" data-name="kiwi" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product8.jpeg">
+        add to cart
+      </button>
+      <a href="" class="btn btn-info">details</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">0%</span>
+          
+            <img src="images/product9.jpeg" alt="">
+            <h3>onion</h3>
+           
+            <div class="price"> 0/- <span> 0/- </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+           <button class="btn btn-danger my-cart-btn" data-id="9" data-name="onion" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product9.jpeg">
+        add to cart
+      </button>
+      <a href="" class="btn btn-info">details</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">0%</span>
+            
+            <img src="images/product10.jpeg" alt="">
+            <h3>cabbage</h3>
+            
+            <div class="price"> 0/- <span> 0/- </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn btn-danger my-cart-btn" data-id="10" data-name="cabbage" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product10.jpeg">
+        add to cart
+      </button>
+      <a href="" class="btn btn-info">details</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">0%</span>
+            
+            <img src="images/product11.jpeg" alt="">
+            <h3>grapes</h3>
+            
+            <div class="price"> 0/- <span> 0/- </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+             <button class="btn btn-danger my-cart-btn" data-id="11" data-name="grapes" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product11.jpeg">
+        add to cart
+      </button>
+      <a href="" class="btn btn-info">details</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">0%</span>
+            
+            <img src="images/product12.jpeg" alt="">
+            <h3>mango</h3>
+            
+            <div class="price"> 0/- <span> 0/- </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn btn-danger my-cart-btn" data-id="12" data-name="mango" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product12.jpeg">
+        add to cart
+      </button>
+      <a href="" class="btn btn-info">details</a>
+        </div>
+
+    </div>
+
+</section>
+
+-->
+
+<!-- ABOUT SECTION-->
+
+<section id="start1">
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+         <!--<img src="#" alt="img"> 
+        </div>-->
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>us</span></h1>
+        <h2></h2>
+        <div class="about-bottom">
+        <div class="about-info">
+      <div class="about-info">
+<h2>Consumer</h2>   
+      <h3>Consumers can buy the products in the consumer portal.Consumer get profit for the products by not buying from the dealers.Consumer get the organic products .It keeps them healthy and safety.Consumers get the delivered products by online  payment or offline payment.Every consumer receives orders within 3 to  5hrs.</h3>
+<a href="#category" class="ctr">Category</a>
+  
+   <a href="#start" class="ctr">Home</a>
+      </div>
+    </div>
+  </div>
+  </section>
+</section>
+
+<!-- END OF ABOUT SECTION -->
+
+<!-- CONTACT SECTION -->
+
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="images\phn.png"></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <br>
+            <h2>+ 123456789</h2>
+            <h2>+ 123456789</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="images\email.jpeg" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <br>
+            <h2>hello@gmail.com</h2>
+            <h2>hai@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+         <div class="icon"><img src="images\addr.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <br>
+            <h2>Earth ..India ..AP</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+  <!-- End Contact Section -->
+
+  <!-- footer -->
+
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>4</span>SEED <span>.</span>com</h1>
+      </div>
+      <h2>social media</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="images\facebook.png"></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="images\twitter.png"></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="images\instagram.png"></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="images\youtub.png"></a>
+        </div>
+      </div>
+      <p>END OF THE PAGE</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app1.js"></script>
+ <script>
+     
+     let suggestions = [
+"Vegetables",
+"vegetables",
+"fruits",
+"Nuts and dry fruits",
+"Hybrid fruits and vegies",
+   ];
+/*function openpage()
+{
+var x=document.getElementById("search").value;
+if(x==="vegetables")
+{
+window.open("vegi.html");
+}
+}*/
+const searchWrapper = document.querySelector(".search-input");
+const inputBox = searchWrapper.querySelector("input");
+const suggBox = searchWrapper.querySelector(".autocom-box");
+const icon = searchWrapper.querySelector(".icon");
+let linkTag = searchWrapper.querySelector("a");
+let webLink;
+
+// if user press any key and release
+inputBox.onkeyup = (e)=>{
+    let userData = e.target.value; //user enetered data
+    let emptyArray = [];
+    if(userData){
+        icon.onclick = ()=>{
+            webLink = `https://www.google.com/search?q=${userData}`;
+            linkTag.setAttribute("href", webLink);
+            linkTag.click();
+        }
+        emptyArray = suggestions.filter((data)=>{
+            //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+            return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+        });
+        emptyArray = emptyArray.map((data)=>{
+            // passing return data inside li tag
+            return data = `<li>${data}</li>`;
+        });
+        searchWrapper.classList.add("active"); //show autocomplete box
+        showSuggestions(emptyArray);
+        let allList = suggBox.querySelectorAll("li");
+        for (let i = 0; i < allList.length; i++) {
+            //adding onclick attribute in all li tag
+            allList[i].setAttribute("onclick", "select(this)");
+        }
+    }else{
+        searchWrapper.classList.remove("active"); //hide autocomplete box
+    }
+}
+
+function select(element){
+    let selectData = element.textContent;
+    inputBox.value = selectData;
+    icon.onclick = ()=>{
+        webLink = `https://www.google.com/search?q=${selectData}`;
+        linkTag.setAttribute("href", webLink);
+        linkTag.click();
+    }
+    searchWrapper.classList.remove("active");
+}
+
+function showSuggestions(list){
+    let listData;
+    if(!list.length){
+        userValue = inputBox.value;
+        listData = `<li>${userValue}</li>`;
+    }else{
+      listData = list.join('');
+    }
+    suggBox.innerHTML = listData;
+var x=document.getElementById('search').value;
+if(x=="Vegetables")
+{
+    
+window.open('vegi.php');
+}
+else if(x=="Fruits")
+{
+window.open('fruit.html');
+}
+else if(x=="vegetables")
+{
+    
+window.open('vegi.php');
+}
+else if(x=="fruits")
+{
+window.open('fruit.html');
+}
+
+}
+ </script>
+</body>
+
+</html>
